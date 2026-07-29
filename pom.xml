@@ -14,7 +14,6 @@
 	<name>Demotest</name>
 	<description>this is project just api demo</description>
 	<properties>
-		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
