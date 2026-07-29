@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,11 @@ import com.springboot.web.security.Sevice.StringOccuranceRequst;
 public class StringOccuranceController {
 	@Autowired
 	private StringOccuranceRequst stringOccuranceService;
+	
+	@GetMapping
+	public String get() {
+		return "Hello";
+	}
 	
     @SuppressWarnings("unchecked")
 	@PostMapping("/countOccurrences")
